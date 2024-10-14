@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+.sub-categories {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    
+  }
+  
+  .sub-categories.expanded {
+    max-height: 500px;
+  }

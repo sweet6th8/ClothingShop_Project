@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+/* General Styles */
+
+.shop-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 2rem; */
+  }
+  
+  .shop-category-content {
+    display: flex;
+  }
+  
+  .shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 82%;
+  }
+  
+  .shopcategory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+  }
+  
+  .shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    cursor: pointer;
+  }
+  
+  .shopcategory-indexSort p span {
+    font-weight: 600;
+  }
+  
+  .shopcategory-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minmax as needed */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .error-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+  .shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    button
+    {
+      background: whitesmoke;
+    }
+  }
+  
+  /* Sidebar CSS */
+  .sidebar {
+    width: 250px;
+    margin-right: 20px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .filter-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .sidebar .filter-section div {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .filter-section input[type="checkbox"],
+  .sidebar .filter-section input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .sidebar .filter-section .sub-categories {
+    margin-left: 20px;
+  }
+  
+  /* SearchBar CSS */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    outline: none;
+  }
+  
+  .search-bar input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-bottom: #f8f8f8;
+  }
+  
+  /* Product Card Styles */
+  .shopcategory-products .product-card {
+    text-align: center; /* Center text within product cards */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shopcategory-products .product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  .shopcategory-products .product-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .shopcategory-products .product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .shopcategory-products .product-card button {
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .shopcategory-products .product-card button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .shopcategory-products {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust for smaller screens */
+    }
+    .shop-category-content {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+    .search-bar {
+      flex-direction: column; /* Stack search bar vertically */
+    }
+    .sidebar {
+      width: 100%; /* Sidebar takes up full width */
+      margin-bottom: 20px; /* Add space between sidebar and products */
+    }
+  }
+
+  /* Specific Adjustments for Search Bar and Buttons */
+  .shopcategory-indexSort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+  }
+
+  .search-bar {
+    flex-direction: row; /* Ensure search bar is horizontal */
+    justify-content: center; /* Center the search bar */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+  }
+
+  .search-bar input {
+    padding: 10px 15px;
+    border: none;
+    transition: all 0.3s ease;
+    width: 100%; /* Search bar takes up full width */
+    max-width: 600px; /* Adjust max-width as needed */
+  }
+
+  .shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    cursor: pointer;
+    margin-left: 20px; /* Add spacing between search bar and sort button */
+  }
+
+  .shopcategory-indexSort p span {
+    font-weight: 600;
+  }
+
+  /* Sidebar Improvements */
+  .sidebar {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .sidebar .filter-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .sidebar .filter-section .header-filter h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+
+    font-family: "Irish Grover",sans-serif;
+  }
+
+  .sidebar .filter-section div {
+    margin-bottom: 10px;
+  }
+
+  .sidebar .filter-section input[type="checkbox"],
+  .sidebar .filter-section input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  .sidebar .filter-section .sub-categories {
+    margin-left: 20px;
+  }
+
+  /* Spacing Adjustments */
+  .shopcategory-products {
+    padding-bottom: 30px; /* Add space between products and footer */
+  }

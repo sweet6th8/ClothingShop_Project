@@ -1,0 +1,15 @@
+/* CSS for Pagination component */
+.custom-pagination .MuiPaginationItem-root {
+    font-size: 1.5rem; /* Change the font size */
+    width: 3rem; /* Change the width of each pagination item */
+    height: 3rem; /* Change the height of each pagination item */
+}
+
+.custom-pagination .MuiPaginationItem-ellipsis {
+    font-size: 1.5rem; /* Change the font size for ellipsis */
+}
+
+.custom-pagination .MuiPagination-ul {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}

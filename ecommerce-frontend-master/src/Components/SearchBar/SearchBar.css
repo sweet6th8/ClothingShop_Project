@@ -1,0 +1,6 @@
+input::placeholder {
+    color: white; /* Thay đổi màu của placeholder */
+}
+.input::placeholder {
+    color: grey; /* Thay đổi màu của placeholder */
+}

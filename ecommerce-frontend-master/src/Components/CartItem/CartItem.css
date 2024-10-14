@@ -1,0 +1,176 @@
+.cartitems {
+    margin: 100px auto; /* Căn giữa div chứa bảng */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+}
+
+.cartitems table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng cho bảng */
+}
+
+.cartitems th, .cartitems td {
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+}
+
+.cartitems th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333; /* Màu chữ của tiêu đề bảng */
+}
+
+.cartitems img.carticon-product-icon {
+    height: 100px;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+.cartitems img.cartitems-remove-icon {
+    width: 20px; /* Tăng kích thước cho dễ nhấn */
+    cursor: pointer;
+    transition: transform 0.3s; /* Thêm hiệu ứng khi hover */
+}
+
+.cartitems img.cartitems-remove-icon:hover {
+    transform: scale(1.2); /* Tăng kích thước khi hover */
+}
+
+.buy-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Thêm khoảng cách giữa các nút */
+}
+
+.buy-amount button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s; /* Thêm hiệu ứng khi hover */
+}
+
+.buy-amount button:hover svg {
+    color: #ff5a5a; /* Thay đổi màu khi hover */
+}
+
+.buy-amount input {
+    width: 60px;
+    height: 40px;
+    border: 2px solid #ebebeb;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 16px; /* Đảm bảo chữ rõ ràng */
+}
+
+.cartitems-down {
+    display: flex;
+    margin: 50px 0;
+    justify-content: space-between; /* Đưa các phần tử vào hai bên */
+    gap: 30px;
+}
+
+.cartitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 16px; /* Đảm bảo chữ rõ ràng */
+    font-weight: 500; /* Tăng cường độ đậm của chữ */
+}
+
+.cartitems-total button {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Thêm hiệu ứng khi hover */
+}
+
+.cartitems-total button:hover {
+    background: #e04e4e; /* Thay đổi màu khi hover */
+}
+
+.cartitems-promocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cartitems-promocode p {
+    color: #555;
+}
+
+.cartitems-promobox {
+    width: 100%;
+    margin-top: 15px;
+    padding: 0 20px;
+    height: 50px;
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    border-radius: 5px; /* Thêm bo góc */
+}
+
+.cartitems-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: calc(100% - 170px); /* Chiếm hết chiều rộng trừ nút submit */
+    height: 100%;
+    padding-left: 10px; /* Thêm khoảng cách bên trái */
+}
+
+.cartitems-promobox button {
+    width: 150px;
+    height: 100%;
+    font-size: 16px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Thêm bo góc */
+    transition: background-color 0.3s; /* Thêm hiệu ứng khi hover */
+}
+
+.cartitems-promobox button:hover {
+    background: #333; /* Thay đổi màu khi hover */
+}
+
+
+.cartitems th, .cartitems td {
+    border: 1px solid #e2e2e2;
+    padding: 20px; /* Increased padding */
+    text-align: center;
+    vertical-align: middle; /* Center content vertically */
+}
+
+.cartitems th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333; /* Table header text color */
+}
+
+/* Increase the size of checkboxes and their containing cells */
+.cartitems input[type="checkbox"] {
+    width: 20px; /* Larger checkbox */
+    height: 20px; /* Larger checkbox */
+}
+
+.cartitems td input[type="checkbox"] {
+    width: 20px; /* Larger checkbox */
+    height: 20px; /* Larger checkbox */
+}
